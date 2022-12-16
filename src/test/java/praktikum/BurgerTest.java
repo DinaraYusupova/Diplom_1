@@ -98,7 +98,7 @@ public class BurgerTest {
 
 
     //Метод для получения списка названий ингридиентов, содержащихся в бургере
-    public List<String> getListOfIngredientsNames(Burger burger){
+    private List<String> getListOfIngredientsNames(Burger burger){
         List<String> ingredientsNames = new ArrayList<>();
         for (Ingredient ingredient : burger.ingredients) {
             ingredientsNames.add(ingredient.getName());
